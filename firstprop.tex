@@ -89,7 +89,7 @@ There are many ways of specifying a graph, the simplest being a list of all $v_{
   \label{fig:optCluster}
 \end{figure}
 
-\vspace{1mm}\\
+\vspace{1mm}
 \indent Certainly, each algorithm has its unique strengths and weaknesses. While some can rapidly construct very large graphs of $n>100,000$, these address only a few of the many potentially interesting properties of a network. The one method that allows users to add properties as desired suffers from scalability issues. The efficient creation of networks with different structural features remains an open area of investigation.
 \section{Data Mining across Networks}
 \label{sec:DM}
@@ -198,7 +198,7 @@ F(\textbf{U}, \lambda) = 0 \\
   \caption{A possible configuration of a two-opinion model. The dotted lines represent conflicts. We may take the blue nodes to be Democrats, the red Republicans; then, the highly connected blue node may represent President Obama, the isolated red component Michele Bachmann and Sarah Palin.}
   \label{fig:graphA}
 \end{figure}
-\\
+
 This process is iterated until the system reaches a consensus state in which $\zeta(v_{i}) = \zeta(v_{j}) \ \forall \ v_{i}, v_{j} \in V(G)$, i.e. every edge connects vertices of the same opinion. An edge $e_{ij}$ is called a conflict whenever $\zeta(v_{i}) \ne \zeta(v_{j})$. Thus the system is evolved until all conflicts are removed. While the general \textit{k} opinion model has received some attention \cite{Shi}, our focus will be the simpler two opinion model. In this case, it has been shown that, for a certain initial minority fraction $p_{minority} \le 0.5$, a bifurcation occurs as $\alpha$ increases. At low values of $\alpha$, fewer edges are rewired and the system approaches a static state. In this limit, the system should converge once each of the $m$ edges are selected, which occurs in $O(n\sqrt{n})$ steps  \cite{Durrett2012}. As $\alpha$ increases, so does the frequency of rewiring edges. This slows the rate of consensus to $O(n^{2})$. Interestingly, besides differences in convergence speed, the final consensus state also changes. In the low-$\alpha$ limit, the final minority fraction is an increasing function of $\alpha$. In the slower, high-$\alpha$ range, the final minority fraction is unchanged from its initial value. Fig. \ref{fig:vmBifDiag5000} illustrates the effect of $\alpha$ and $p_{minority}$ on the final consensus state. \vspace{1mm}
 \begin{figure}[h!]
   \centering
@@ -325,5 +325,5 @@ A number of areas present themselves as good research directions. They're divide
 Through this research, we hope to exploit the common structure of dynamic network systems to devise analytical tools generally applicable across the field.
 
 \bibliographystyle{abbrv}
-\bibliography{$HOME/Documents/bibTex/library}
+\bibliography{$HOME/Documents/bib}
 \end{document}
